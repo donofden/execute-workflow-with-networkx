@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "execute-workflow-with-networkx"
+version = "0.1.0"
+description = "The goal is to run a workflow created from a collection of steps (graph nodes) and their dependencies (graph edges)."
+authors = ["DonOfDen"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+networkx = "^2.6.2"
+matplotlib = "^3.4.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+pytest-cov = "^2.8.1"
+pytest-xdist = "^1.31.0"
+pytest-html = "^2.1.1"
+pylint = "^2.4.4"
+pytest-mock = "^3.0.0"
+pytest-env = "^0.6.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
